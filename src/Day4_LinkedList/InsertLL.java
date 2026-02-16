@@ -23,18 +23,40 @@ public class InsertLL {
 
         head.next= Second;
         Second.next= third;
+//     Traversing LL before insert operation
+        Node temp = head;
+
+        while(temp!=null){
+            System.out.print(temp.data + "->");
+            temp= temp.next;
+        }
+
+        System.out.println("Null");
+
+//        Insert at beginning
 
         Node newNode= new Node(5);
         newNode.next= head;
+//    Traversing LL after inserting element at beginning
+        temp = newNode;
 
+        while(temp!=null){
+            System.out.print(temp.data + "->");
+            temp= temp.next;
+        }
+
+        System.out.println("Null");
+
+
+
+//        Insert at end
         Node endNode= new Node(50);
-
         endNode.next=null;
         third.next= endNode;
 
-//        Traversing LL
+//        Traversing LL after inserting element at end
 
-        Node temp = newNode;
+        temp = newNode;
 
         while(temp!=null){
             System.out.print(temp.data + "->");
